@@ -2,7 +2,7 @@ import  RenderPosts  from "./modules/RenderPosts.js";
 import acordion from "./modules/acordion.js";
 // import GetViews from "./modules/GetViews.js";
 import RenderViews from "./modules/RenderViews.js";
-import InitModal from "./modules/IninMolal.js";
+import InitModal from "./modules/InitMolal.js";
 
 
 

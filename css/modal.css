@@ -7,7 +7,22 @@
    top: 0;
    left: 0;
 }
+.modal__callback{
+   display: none;
+   width: 100vw;
+   height: 100vh;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
 .modal.visible{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0,0,0,.7);
+   z-index: 10;
+}
+.modal__callback.visible{
    display:flex;
    justify-content: center;
    align-items: center;
@@ -22,7 +37,12 @@
    min-height: 287px;
    background-color: #fff;
    border-radius: 5px;
-
+}
+.modal-callback__container{
+   min-width: 300px;
+   max-width: 380px;
+   background-color: #fff;
+   border-radius: 5px;
 }
 .modal__item {
    padding-top: 35px;

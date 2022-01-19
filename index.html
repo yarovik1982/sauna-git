@@ -32,38 +32,77 @@
 </head>
 
 <body>
-    <div class="modal">
-        <div class="modal__container">
-            <form action="#" class="modal__form">
-                <div class="modal__item">
-                    <div class="modal__item-row">
-                        <p class="modal__item-text">Воспользоваться предложением</p>
-                        <span class="modal__item-close">
+    <div class="modal modal-book">
+        <div class="modal__container modal-book__container">
+            <form action="#" class="modal__form modal-book__form">
+                <div class="modal__item modal-book__item">
+                    <div class="modal__item-row modal-book__item-row">
+                        <p class="modal__item-text modal-book__item-text">Воспользоваться предложением</p>
+                        <span class="modal__item-close modal-book__item-close">
                             <img src="images/close.svg" alt="">
                         </span>
                     </div>
-                    <div class="modal__item-row">
-                        <p class="modal__item-descript">Для того, чтобы воспользоваться предложением, заполните форму</p>
+                    <div class="modal__item-row modal-book__item-row">
+                        <p class="modal__item-descript modal-book__item-descript">Для того, чтобы воспользоваться предложением, заполните форму</p>
                     </div>
 
-                    <div class="modal__form-data">
-                        <input type="tel" class="modal__form-inp" placeholder="Ваш телефон">
-                        <select name="select-hall" id="select-hall" class="modal__form-select">
+                    <div class="modal__form-data modal-book__form-data">
+                        <input type="tel" class="modal__form-inp modal-book__form-inp" placeholder="Ваш телефон">
+                        <select name="select-hall" id="select-hall" class="modal__form-select modal-book__form-select">
                             <option selected>Выберите зал</option>
                             <option value="russian">русская</option>
                             <option value="finnish">финская</option>
                             <option value="hammam">хаммам</option>
                         </select>
                     </div>
-                    <div class="modal__form-agreement">
-                        <input type="checkbox" name="modal__form-checkbox" id="modal__form-checkbox" class="modal__form-checkbox">
-                        <p class="modal__form-agree">Согласен на обработку и передачу персональных данных в соответствии с
-                            <a href="#" class="modal__form-agree-link">пользовательским соглашением</a> 
+                    <div class="modal__form-agreement modal-book__form-fgreement">
+                        <input type="checkbox" name="modal__form-checkbox modal-book__form-checkbox" id="modal__form-checkbox" class="modal__form-checkbox">
+                        <p class="modal__form-agree modal-book__form-agree">Согласен на обработку и передачу персональных данных в соответствии с
+                            <a href="#" class="modal__form-agree-link modal-book__form-agree-link">пользовательским соглашением</a> 
                         </p>
                     </div>    
                 </div>
-                <div class="modal__form-btn">          
-                    <button type="submit" class="modal__form-button is-button bg-green w-100-percents">
+                <div class="modal__form-btn modal-book__form-btn">          
+                    <button type="submit" class="modal__form-button modal-book__form-button is-button bg-green w-100-percents">
+                        <span class="btn__text">Получить код</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal__callback">
+        <div class="modal-callback__container">
+            <form action="#" class="modal__form modal-callback__form">
+                <div class="modal__item modal-callback__item">
+                    <div class="modal__item-row modal-callback__item-row">
+                        <p class="modal__item-text modal-callback__item-text">Воспользоваться предложением</p>
+                        <span class="modal__item-close modal-callback__item-close">
+                            <img src="images/close.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="modal__item-row modal-callback__item-row">
+                        <p class="modal__item-descript modal-callback__item-descript">Для того, чтобы воспользоваться предложением, заполните форму</p>
+                    </div>
+    
+                    <div class="modal__form-data modal-callback__form-data">
+                        <input type="tel" class="modal__form-inp modal-callback__form-inp" placeholder="Ваш телефон">
+                        <select name="select-hall" id="select-hall" class="modal__form-select modal-callback__form-select">
+                            <option selected>Выберите зал</option>
+                            <option value="russian">русская</option>
+                            <option value="finnish">финская</option>
+                            <option value="hammam">хаммам</option>
+                        </select>
+                    </div>
+                    <div class="modal__form-agreement modal-callback__form-fgreement">
+                        <input type="checkbox" name="modal__form-checkbox modal-callback__form-checkbox" id="modal__form-checkbox" class="modal__form-checkbox">
+                        <p class="modal__form-agree modal-callback__form-agree">Согласен на обработку и передачу персональных данных в соответствии с
+                            <a href="#" class="modal__form-agree-link modal-callback__form-agree-link">пользовательским соглашением</a> 
+                        </p>
+                    </div>    
+                </div>
+                <div class="modal__form-btn modal-callback__form-btn">          
+                    <button type="submit" class="modal__form-button modal-callback__form-button is-button bg-green w-100-percents">
                         <span class="btn__text">Получить код</span>
                     </button>
                 </div>
@@ -97,7 +136,7 @@
                                 </span>
                                 <span class="info__tel">+7 (911) 554-00-99</span>
                             </a>
-                            <button class="info__btn" data-id="offer">
+                            <button class="info__btn" data-id="book">
                                 <span class="btn__text">Забронировать</span>
                                 <span class="btn__arrow"><img src="images/icon-arrow-more.svg" alt=""></span>
                             </button>
@@ -118,7 +157,7 @@
                             </div>
                             <p class="header__offer-text offer">Работаем круглосуточно</p>
                             <p class="header__offer-price offer">Цены от 900 рублей</p>
-                            <button class="header__btn-callback is-button bg-green">
+                            <button class="header__btn-callback is-button bg-green" data-id="callback">
                                 <span class="btn__text">Заказать обратный звонок</span>
                                 <span class="btn__arrow">
                                     <img src="images/icon-arrow-more.svg" alt="">
@@ -143,7 +182,7 @@
        </div>
   </header>
 
-  <section class="is-free ">
+  <section class="is-free none ">
       <div class="container">
           <div class="is-free__row">
               <div class="is-free__column">
@@ -179,7 +218,7 @@
       </div>
   </section>
 
-  <section class="about">
+  <section class="about none">
       <div class="container">
           <div class="about__row">
               <div class="about__column">
@@ -197,7 +236,7 @@
       </div>
   </section>
 
-  <section class="slider">
+  <section class="slider none">
         <div class="container">
             <div class="slider__row">
                 <div class="slider__btn">
@@ -316,7 +355,7 @@
         </div>
   </section>
 
-  <section class="benefits ">
+  <section class="benefits none ">
       <div class="container">
           <div class="benefits__row">
               <h4 class="benefits__title">Преимущества</h4>
@@ -396,7 +435,7 @@
       </div>
   </section>
 
-  <section class="slid-banner">
+  <section class="slid-banne noner">
       <div class="container">
           <div class="slid-banner__row">
               <h2 class="slid-banner__title title">Актуальные скидки и акции</h2>
@@ -491,7 +530,7 @@
       </div>
   </section>
 
-  <section class="consultation ">
+  <section class="consultation none ">
       <div class="container__full">
         <div class="consultation__row">
             <div class="container">
@@ -515,8 +554,8 @@
                         </div>
                         <div class="form__item-right">
                             <input type="tel" placeholder="Ваш телефон" class="is-free_input input-white-text">
-                            <button class="is-button bg-white">
-                                <span class="btn__text">Проверить</span>
+                            <button class="is-button bg-white" data-id="callback">
+                                <span class="btn__text">Перезвоните мне</span>
                                 <span class="btn__arrow">
                                     <img src="images/icon-arrow-more-greeny.svg" alt="">
                                 </span>
@@ -530,7 +569,7 @@
       </div>
   </section>
 
-  <section class="reviews ">
+  <section class="reviews none ">
       <div class="container">
           <h2 class="reviews__title title">Отзывы</h2>
           <div class="reviews__row-container"><!-- --></div>
@@ -553,7 +592,7 @@
       </div>
   </section>
 
-  <section class="map ">
+  <section class="map none ">
       <div class="container__full">
         <!-- <div  id="map" style="width: 1920px;height: 500px;"></div> -->
         <div class="map__bg">
@@ -604,7 +643,7 @@
       </div>
   </section>
 
-  <footer class="footer">
+  <footer class="footer none">
       <div class="container__full">
           <div class="footer__bg">
               <p class="footer__text">CОЗДАНИЕ И ПРОДВИЖЕНИЕ САЙТА - ПРИОРИТЕТ | ОБОРУДОВАНИЕ ДЛЯ САУН</p>
@@ -612,14 +651,14 @@
       </div>
   </footer>
 
-     
+    
  
 
   <script type="module" src="js/main.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
   <script src="js/slider.js"></script>
-  <script src="js/yandexMap.js"></script>
+  <!-- <script src="js/yandexMap.js"></script> -->
 </body>
 
 </html>
