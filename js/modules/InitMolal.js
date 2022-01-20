@@ -17,7 +17,7 @@ function InitModal(){
    document.addEventListener("click", function(event){
       let elem = event.target;
       if(elem.closest('[data-id=book]')){
-         console.log(event);
+         
          addClassElement(body, "lock");
          addClassElement(modal, "visible");
       }
@@ -32,8 +32,6 @@ function InitModal(){
          removeClassElement(modal, "visible");
          removeClassElement(modalCallback, "visible");
       }
-      console.log(modalCallback);
-      console.log(elem);
    })
 }
 export default InitModal;
