@@ -10,7 +10,7 @@ function Modal (){
       }
    ];
 
-  function renderModal({name,elementHtml,classMan,classSecond,html}){
+  function renderModal(name,elementHtml,classMan,classSecond,html){
    const modalContainer = document.createElement(elementHtml);
    modalContainer.className = classMan;
    modalContainer.setAttribute("id", name);
@@ -22,7 +22,7 @@ function Modal (){
   document.addEventListener("click", event=>{
      el = event.target;
      if(el.closest("[data-id=review]")){
-        renderModal({options[id], options[elementHtml], options[_classMain],})
+        renderModal(options[id], options[elementHtml], options[_classMain])
      }
   })
   renderModal();
