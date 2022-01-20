@@ -101,6 +101,9 @@
    color: rgba(30, 30, 30, 0.5);
    margin-bottom: 30px;
 }
+.modal-callback__form-inp{
+   width: 100%;
+}
 .modal__form-select {
    width:  250px;
    background: rgb(169 245 243);
