@@ -642,7 +642,7 @@
   </footer>
 
   <div class="tech">
-    <div class="modal modal-view visible">
+    <div class="modal modal-view ">
         <div class="modal__container modal-view__container">
             <form action="#" class="modal__form modal-view__form">
                 <div class="modal__item modal-view__item">
@@ -651,11 +651,7 @@
                         <span class="modal__item-close modal-view__item-close">
                             <img src="images/close.svg" alt="">
                         </span>
-                    </div>
-                    <!-- <div class="modal__item-row modal-view__item-row">
-                        <p class="modal__item-descript modal-view__item-descript">Для того, чтобы воспользоваться предложением, заполните форму</p>
-                    </div> -->
-     
+                    </div>     
                     <div class="modal__form-data modal-view__form-data">
                         <input type="text" class="modal__form-inp modal-view__form-inp" placeholder="Ваше имя">
                         <input type="tel" class="modal__form-inp modal-view__form-inp" placeholder="Ваш телефон"> 
@@ -663,23 +659,35 @@
                     <div class="modal__item-row modal-view__item-row">
                         <textarea name="view-textarea" id="view-textarea" class="modal-view__item-textarea" placeholder="Ваш отзыв"></textarea>
                     </div>
-                    <div class="modal__item-row modal-view__item-row">
-                        <span class="modal-view__item-text"></span>
-                        <span class="modal-view__item-icon">
-                            
-                        </span>
-                        <span class="modal-view__item-icon">
-                            
-                        </span>
-                        <span class="modal-view__item-icon">
-                            
-                        </span>
-                        <span class="modal-view__item-icon">
-                            
-                        </span>
-                        <span class="modal-view__item-icon">
-                            
-                        </span>
+                    <div class="modal__item-row modal-view__item-row flex-start">
+                        <span class="modal-view__item-text">Ваша оценка</span>
+                        <div class="modal-view__item-icons">
+                            <span class="modal-view__item-icon">
+                                <svg class="icon" width="20px"height="18px" >
+                                    <use xlink:href="images/sprite.svg#star-1"></use>
+                                </svg>
+                            </span>
+                            <span class="modal-view__item-icon">
+                                <svg class="icon" width="20" height="18">
+                                    <use xlink:href="images/sprite.svg#star-2"></use>
+                                </svg>
+                            </span>
+                            <span class="modal-view__item-icon">
+                                <svg class="icon" width="20" height="18">
+                                    <use xlink:href="images/sprite.svg#star-3" ></use>
+                                </svg>
+                            </span>
+                            <span class="modal-view__item-icon">
+                                <svg class="icon" width="20" height="18">
+                                    <use xlink:href="images/sprite.svg#star-4"></use>
+                                </svg>
+                            </span>
+                            <span class="modal-view__item-icon">
+                                <svg class="icon" width="20" height="18">
+                                    <use xlink:href="images/sprite.svg#star-5"></use>
+                                </svg>
+                            </span>
+                        </div>
                     </div>
                     <div class="modal__form-agreement modal-view__form-fgreement">
                         <input type="checkbox" name="modal__form-checkbox modal-view__form-checkbox" id="modal__form-checkbox" class="modal__form-checkbox">
@@ -695,7 +703,7 @@
                 </div>
             </form>
         </div>
-     </div>
+    </div>
   </div>
 
     
