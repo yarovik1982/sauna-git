@@ -4,6 +4,9 @@ function InitModal(){
    // const offer = document.querySelector("[data-id=offer");
    const modal = document.querySelector(".modal");
    const modalCallback = document.querySelector(".modal__callback");
+   let scrolling = function(event){
+      window.scrollTo(0, 0);
+   }
    
 
    function addClassElement (element, _class){
@@ -14,9 +17,9 @@ function InitModal(){
       element.classList.remove(_class);
    }
 
-   function disableScroll(){
-      window.scrollTo(0,0);
-   }
+   // function disableScroll(){
+   //    window.scrollTo(0,0);
+   // }
 
    document.addEventListener("click", function(event){
       let elem = event.target;
@@ -24,19 +27,21 @@ function InitModal(){
          
          addClassElement(body, "lock");
          addClassElement(modal, "visible");
-         disableScroll();
+         // disableScroll();
+         window.addEventListener("scroll", scrolling);
       }
       if(elem.closest('[data-id=callback]')){
          
          addClassElement(body, "lock");
          addClassElement(modalCallback, "visible");
-         disableScroll();
+         window.addEventListener("scroll", scrolling);
       }
       if(elem.closest(".modal__item-close") || elem.classList.contains("modal") || elem.classList.contains("modal__callback")){
          
          removeClassElement(body, "lock");
          removeClassElement(modal, "visible");
          removeClassElement(modalCallback, "visible");
+         window.removeEventListener("scroll", scrolling);
       }
    })
 }
