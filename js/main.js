@@ -3,6 +3,7 @@ import acordion from "./modules/acordion.js";
 // import GetViews from "./modules/GetViews.js";
 import RenderViews from "./modules/RenderViews.js";
 import InitModal from "./modules/InitMolal.js";
+import Modal from "./modules/Modal.js";
 
 
 
@@ -23,3 +24,4 @@ RenderPosts(posts, "item");
 acordion();
 RenderViews();
 InitModal();
+Modal();
