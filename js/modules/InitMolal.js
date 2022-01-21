@@ -4,6 +4,7 @@ function InitModal(){
    // const offer = document.querySelector("[data-id=offer");
    const modal = document.querySelector(".modal");
    const modalCallback = document.querySelector(".modal__callback");
+   const modalView = document.querySelector(".modal-view");
    let scrolling = function(event){
       window.scrollTo(0, 0);
    }
@@ -34,6 +35,11 @@ function InitModal(){
          
          addClassElement(body, "lock");
          addClassElement(modalCallback, "visible");
+         window.addEventListener("scroll", scrolling);
+      }
+      if(elem.closest("[data-id=review]")){
+         addClassElement(body, "lock");
+         addClassElement(modalView, "visible");
          window.addEventListener("scroll", scrolling);
       }
       if(elem.closest(".modal__item-close") || elem.classList.contains("modal") || elem.classList.contains("modal__callback")){
